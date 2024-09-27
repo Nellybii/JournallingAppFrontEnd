@@ -82,6 +82,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
+    backgroundColor: '#f8f9fa',
+    borderColor: "black",
   },
   title: {
     fontSize: 40,
@@ -95,7 +97,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   formContainer: {
-    width: '70%',
+    width: '50%',
   },
   input: {
     width: '100%',

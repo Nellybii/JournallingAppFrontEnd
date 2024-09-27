@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
     return (
         <ScrollView contentContainerStyle={styles.container}>
             <View style={styles.header}>
-                <Text style={styles.logo}>Your Journaling App</Text>
+                <Text style={styles.logo}>Bring Your Journal To Life </Text>
             </View>
 
             <View style={styles.hero}>
@@ -37,7 +37,7 @@ const LandingPage: React.FC = () => {
                             </Text>
                         </View>
                         <Image
-                            source={{ uri: 'https://media.istockphoto.com/id/1550540247/photo/decision-thinking-and-asian-man-in-studio-with-glasses-questions-and-brainstorming-on-grey.webp?a=1&b=1&s=612x612&w=0&k=20&c=S_OkPNG0sRlZrTAgJSMcDcivp6E-RJSWOf9vX3AEkgc=' }} 
+                            source={{ uri: 'https://i0.wp.com/dayoneapp.com/wp-content/uploads/2021/10/01-1-day-one-main-screen@2x.png?w=600&quality=80&ssl=1' }} 
                             style={styles.featureImage}
                         />
                     </View>
@@ -101,7 +101,7 @@ const LandingPage: React.FC = () => {
 
             <View style={styles.testimonials}>
                 <Text style={styles.sectionTitle}>What Our Users Say</Text>
-                <Text style={styles.testimonial}>“This app has changed my life!” - User A</Text>
+                <Text style={styles.testimonial}>“This app has changed my life!”</Text>
                 <Text style={styles.testimonial}>“I love journaling again, thanks to this app!” - User B</Text>
             </View>
 
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     logo: {
-        fontSize: 24,
+        fontSize: 40,
         fontWeight: 'bold',
     },
     hero: {
@@ -148,6 +148,7 @@ const styles = StyleSheet.create({
         fontSize: 22,
         fontWeight: 'bold',
         marginBottom: 10,
+        textAlign: 'center',
     },
     feature: {
         marginBottom: 20,
@@ -194,6 +195,7 @@ const styles = StyleSheet.create({
     footer: {
         alignItems: 'center',
         marginTop: 20,
+        backgroundColor: 'transparent',
     },
     footerText: {
         fontSize: 14,
@@ -209,7 +211,7 @@ const styles = StyleSheet.create({
     },
     benefitDescription: {
         fontSize: 16,
-        color: '#666',
+        color: '#111',
         marginBottom: 10,
         textAlign: 'left',
     },
@@ -218,6 +220,7 @@ const styles = StyleSheet.create({
         color: '#444',
         marginBottom: 5,
         lineHeight: 20,
+        
     },
 });
 

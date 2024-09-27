@@ -12,7 +12,7 @@ interface AuthProps {
 }
 
 const TOKEN_KEY = 'my-jwt';
-export const API_URL = 'http://127.0.0.1:8000/';
+export const API_URL = 'https://journaling-appfe.onrender.com/';
 
 const AuthContext = createContext<AuthProps>({});
 
@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }: any) => {
             console.log(response);
             return response;
         } catch (err) {
-            return { error: true, msg: (err as any).response.data.msg };
+            return { error: true, msg: (err as any).response.data.msg } || alert(err);
         }
     };
 
@@ -65,7 +65,7 @@ export const AuthProvider = ({ children }: any) => {
             await AsyncStorage.setItem(TOKEN_KEY, response.data.access);
             return { error: false };
         } catch (err) {
-            return { error: true, msg: (err as any).response?.data?.msg || 'Login failed' };
+            return { error: true, msg: (err as any).response?.data?.msg || alert('Login failed, ensure you fill the right credentials') };
         }
     };
     
