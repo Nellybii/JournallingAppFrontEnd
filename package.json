@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "expo start"
+    "build": "react-scripts build"
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.2.1",
